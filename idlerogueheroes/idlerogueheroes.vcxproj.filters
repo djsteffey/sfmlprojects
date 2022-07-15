@@ -21,9 +21,6 @@
     <ClCompile Include="src\Screen.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\datamodel\Affix.cpp">
-      <Filter>src\datamodel</Filter>
-    </ClCompile>
     <ClCompile Include="src\datamodel\Character.cpp">
       <Filter>src\datamodel</Filter>
     </ClCompile>
@@ -34,6 +31,9 @@
       <Filter>src\datamodel</Filter>
     </ClCompile>
     <ClCompile Include="src\datamodel\Item.cpp">
+      <Filter>src\datamodel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datamodel\Affix.cpp">
       <Filter>src\datamodel</Filter>
     </ClCompile>
   </ItemGroup>
@@ -60,6 +60,9 @@
       <Filter>src\datamodel</Filter>
     </ClInclude>
     <ClInclude Include="src\datamodel\Item.hpp">
+      <Filter>src\datamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\datamodel\enums.hpp">
       <Filter>src\datamodel</Filter>
     </ClInclude>
   </ItemGroup>

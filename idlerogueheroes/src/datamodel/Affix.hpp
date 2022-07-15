@@ -1,42 +1,32 @@
 #pragma once
 
+#include "enums.hpp"
+
 namespace irh {
 	namespace datamodel {
-		struct Affix {
+		class Affix {
 		public:
-			Affix() {
-				this->rangeMin.asInt = 0;
-				this->rangeMax.asInt = 0;
-				this->actual.asInt = 0;
-				this->isFloat = false;
-			}
+			Affix(enums::EAttributeType attributeType);
+			Affix(enums::EAttributeType attributeType, int min, int max, int actual);
+			Affix(enums::EAttributeType attributeType, float min, float max, float actual);
+			~Affix();
 
-			Affix(int min, int max, int actual) {
-				this->rangeMin.asInt = 0;
-				this->rangeMax.asInt = 0;
-				this->actual.asInt = 0;
-				this->isFloat = false;
-			}
+		protected:
 
-			~Affix() {
-
-			}
-
+		private:
+			enums::EAttributeType attributeType;
 			union {
 				int asInt;
 				float asFloat;
 			} rangeMin;
-
 			union {
 				int asInt;
 				float asFloat;
 			} rangeMax;
-
 			union {
 				int asInt;
 				float asFloat;
 			} actual;
-
 			bool isFloat;
 		};
 	}
